@@ -1,0 +1,27 @@
+{
+    "name": "paymefy/labsmobile-notifier",
+    "type": "symfony-bridge",
+    "description": "Symfony Paymefy Notifier Bridge",
+    "keywords": ["sms", "paymefy", "notifier"],
+    "homepage": "https://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paymefy",
+            "email": "hello@paymefy.com",
+            "homepage": "https://www.paymefy.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "symfony/http-client": "^4.3|^5.0",
+        "symfony/notifier": "~5.2.2"
+    },
+    "autoload": {
+        "psr-4": { "Paymefy\\Component\\Notifier\\Bridge\\LabsMobile\\": "" },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
