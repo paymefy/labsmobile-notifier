@@ -3,7 +3,7 @@
     "type": "symfony-bridge",
     "description": "Symfony Paymefy Notifier Bridge",
     "keywords": ["sms", "paymefy", "notifier"],
-    "homepage": "https://symfony.com",
+    "homepage": "https://github.com/paymefy/labsmobile-notifier",
     "license": "MIT",
     "authors": [
         {
