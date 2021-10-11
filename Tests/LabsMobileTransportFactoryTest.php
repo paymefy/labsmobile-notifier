@@ -7,10 +7,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Paymefy\Component\Notifier\Bridge\LabMobile\Tests;
+namespace Paymefy\Component\Notifier\Bridge\LabsMobile\Tests;
 
 use Paymefy\Component\Notifier\Bridge\LabsMobile\LabsMobileTransportFactory;
-use Symfony\Component\Notifier\Tests\TransportFactoryTestCase;
+use Symfony\Component\Notifier\Test\TransportFactoryTestCase;
 use Symfony\Component\Notifier\Transport\TransportFactoryInterface;
 
 final class LabsMobileTransportFactoryTest extends TransportFactoryTestCase

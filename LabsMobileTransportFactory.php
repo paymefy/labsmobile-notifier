@@ -2,7 +2,6 @@
 
 namespace Paymefy\Component\Notifier\Bridge\LabsMobile;
 
-use Symfony\Component\Notifier\Exception\IncompleteDsnException;
 use Symfony\Component\Notifier\Exception\UnsupportedSchemeException;
 use Symfony\Component\Notifier\Transport\AbstractTransportFactory;
 use Symfony\Component\Notifier\Transport\Dsn;
@@ -20,11 +19,7 @@ final class LabsMobileTransportFactory extends AbstractTransportFactory
 
         $username = $this->getUser($dsn);
         $apiToken = $this->getPassword($dsn);
-        $from = $dsn->getOption('from');
-
-        if (!$from) {
-            throw new IncompleteDsnException('Missing from.', $dsn->getOriginalDsn());
-        }
+        $from = $dsn->getRequiredOption('from');
 
         $host = 'default' === $dsn->getHost() ? null : $dsn->getHost();
         $port = $dsn->getPort();
